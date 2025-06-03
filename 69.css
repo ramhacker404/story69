@@ -1,12 +1,4 @@
-  :root {
-      --bg-color: #f9f9f9;
-      --text-color: #333;
-      --accent-color: #ff3366;
-      --card-bg: #fff;
-    }
 
-    [data-theme="dark"] {
-      --bg-color: #121212;
 * {
   margin: 0;
   padding: 0;

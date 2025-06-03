@@ -213,8 +213,16 @@ header input {
 }
 
 
-.prev-btn, .next-btn {
-  padding: 10px 10px;
+.story-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 20px; /* adjust spacing */
+}
+
+.prev-btn,
+.next-btn {
+  padding: 10px 20px;
   background-color: #ff6b00;
   color: white;
   text-decoration: none;
@@ -223,7 +231,8 @@ header input {
   transition: background 0.3s ease;
 }
 
-.prev-btn:hover, .next-btn:hover {
+.prev-btn:hover,
+.next-btn:hover {
   background-color: #e55a00;
 }
 

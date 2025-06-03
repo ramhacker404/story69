@@ -1,74 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hamster Stories – Stories Hub</title>
-  <meta name="description" content="Read bold and adult sex stories on Hamster Stories. Daily spicy updates. 18+ content.">
-  <meta name="keywords" content="sex stories, adult stories, bold content, 18+ stories">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="69.css">
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Story69 - Naughty Stories in Telugu</title>
+  <meta name="description" content="Read hot and naughty Telugu stories online. 18+ content only.">
+  <meta name="keywords" content="Telugu stories, hot stories, desi stories, story69, adult stories">
+  <meta name="author" content="ram">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="1.css">
 </head>
-  
 <body>
-
-  <nav>
-    <div class="nav-left">Story69</div>
-    <button class="toggle-btn" onclick="toggleTheme()">Toggle Dark</button>
-  </nav>
-
-  <header>
-    <h1>Stories</h1>
-    <p>Daily adult content for mature readers only</p>
-  </header>
-
-  <section class="stories">
-    <div class="story-card">
-      <h2>College Hostel Fantasy</h2>
-      <p>Read how passion unfolds between roommates in a secret night...</p>
+  
+    <header>
+    <div class="logo">
+          <a href="../index.html" style="text-decoration:none;"> 
+       <span class="white-txt">Story</span><span class="orange-txt">69</span></a>
     </div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="/trends.html">Trending</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/aboutus.html"> About us</a>
+      <a href="/privacy.html">Policy and Privacy</a>
+      
+    </nav>
+     </header>
+     
+     
+  
+     <!-- search box here -->
+<div class="search-container">
+  <label for="searchInput" style="position:absolute; left:-9999px;">Search for stories</label>
+  <input type="text" id="searchInput" placeholder="Search stories..." />
+  <div id="searchResults" class="search-results"></div>
+</div>
 
-    <div class="story-card">
-      <h2>Auntie's Secret Desires</h2>
-      <p>One young man's unforgettable summer at his aunt’s place...</p>
-    </div>
-
-    <div class="story-card">
-      <h2>Steamy Office Affair</h2>
-      <p>Late nights, strong coffee and stronger chemistry in the office...</p>
-    </div>
-
-    <div class="story-card">
-      <h2>Train Romance in Sleeper Coach</h2>
-      <p>A quiet journey turns into an unforgettable encounter...</p>
-    </div>
+  <section class="hero">
+    <h1>story69 adult Hub</h1>
+    <p>Explore your favorite Telugu stories!</p>
   </section>
   
   
+<section class="story-section">
+  <h2 class="story-title">College Lovers Having Fun</h2>
+  <p class="story-content">
+    Raju & Shruthi same college lo chadavatam start ayyaru. First lo okariki okaru set avvaledu. But time pass ayyaka, library lo time spend cheyyadam, canteen lo chitchat, class bunk chesi college terrace ki velladam – slowly connection develop ayyindi.<br><br>
+    One fine day, Raju decide ayyadu propose cheyyali ani. Shruthi fav place – terrace ki pilichi “Nuvvu naku chala ishtam Shruthi… I love you” annadu. Shruthi smile chesi “Cheppadaniki waiting lo unna Raju” ani reply ichindi.
+  </p>
+
+  <a href="college-love-story-full.html" class="read-full-btn">Read Full Story</a>
+
+</section>
+
+
+<br>
+<br>
   
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  
+    <!-- Social Media Section -->
+<section class="social-media">
+  <h3>Follow Us</h3>
+  <div class="social-icons">
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+</section>
+ 
+ <br>
 
   <footer>
-    &copy; 2025 HamsterStories.hacker404.site | All rights reserved.
+    <p>&copy; 2025 Story69 by Mr. Ram.</p>
   </footer>
 
-  <script>
-    function toggleTheme() {
-      const currentTheme = document.documentElement.getAttribute("data-theme");
-      if (currentTheme === "dark") {
-        document.documentElement.removeAttribute("data-theme");
-      } else {
-        document.documentElement.setAttribute("data-theme", "dark");
-      }
+  
+<script>
+  function toggleMenu() {
+      const menu = document.getElementById("nav-menu");
+      menu.classList.toggle("show");
     }
-  </script>
 
+    document.addEventListener("click", function(event) {
+      const navMenu = document.getElementById("nav-menu");
+      const toggleBtn = document.querySelector(".menu-toggle");
+      if (!navMenu.contains(event.target) && !toggleBtn.contains(event.target)) {
+        navMenu.classList.remove("show");
+      }
+    });
+
+    // Carousel scroll tracking
+    const carousel = document.getElementById("langCarousel");
+    const indicators = document.querySelectorAll("#langIndicators span");
+
+    carousel.addEventListener("scroll", () => {
+      const index = Math.round(carousel.scrollLeft / (carousel.scrollWidth / 5));
+      indicators.forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
+      });
+    });
+</script>
+
+  
 </body>
-</html>
-</html></body>
-</html>
+</html> 

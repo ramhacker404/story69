@@ -326,6 +326,14 @@ footer {
     margin-top: 10px;
   }
 
+#nav-menu a {
+   color: #fff;
+  padding: 8px 0;
+  display: block;
+  transition: 0.2s;
+  font-weight: 500;
+}
+
   #nav-menu.show {
     display: flex;
   }

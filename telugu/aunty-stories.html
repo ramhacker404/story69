@@ -119,10 +119,12 @@
   
   <br>
   <br>
+
+     <h1 style="font-size: 26px; margin-bottom: 5px; color: orange; font-weight: bold;">Category Aunty Stories</h1>
   
+   <br>
 <section id="storyContainer" class="story-list-section">
-  <h1 style="font-size: 26px; margin-bottom: 5px; color: orange; font-weight: bold;">Category Aunty Stories</h1>
-  
+
 <script>
   const storyContainer = document.getElementById("storyContainer");
 
@@ -130,7 +132,7 @@ fetch("../searchstories.json")
   .then(res => res.json())
   .then(data => {
     const filtered = data.filter(item =>
-      item.category && item.category.toLowerCase() === "Aunty"
+      item.category && item.category.toLowerCase() === "aunty"
     );
 
     if (filtered.length === 0) {

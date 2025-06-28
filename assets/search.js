@@ -1,4 +1,4 @@
-<script>
+
 const searchInput = document.getElementById("searchInput");
 const searchResults = document.getElementById("searchResults");
 
@@ -58,4 +58,4 @@ document.addEventListener("click", function (event) {
     searchResults.style.display = "none";
   }
 });
-</script>
+

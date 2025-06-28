@@ -78,6 +78,28 @@
 .read-full-btn:hover {
   background-color: #e76f00;
 }
+    .search-results {
+  background: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 6px;
+  max-height: 300px;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  padding: 5px;
+}
+
+.result-item {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #2e2e2e;
+  color: #fff;
+}
+
+.result-item:hover {
+  background-color: #333;
+}
   
 </style>
 </head>
@@ -101,8 +123,8 @@
      
      
   
-     <!-- search box here -->
-<div class="search-container">
+ <!-- search box here -->
+<div class="search-container" style="position: relative;">
   <label for="searchInput" style="position:absolute; left:-9999px;">Search for stories</label>
   <input type="text" id="searchInput" placeholder="Search stories..." />
   <div id="searchResults" class="search-results"></div>

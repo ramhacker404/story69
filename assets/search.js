@@ -1,3 +1,4 @@
+<script>
 const searchInput = document.getElementById("searchInput");
 const searchResults = document.getElementById("searchResults");
 
@@ -32,12 +33,14 @@ searchInput.addEventListener("input", () => {
     filtered.slice(0, 10).forEach(item => {
       const div = document.createElement("div");
       div.classList.add("result-item");
-      
+
       div.innerHTML = `
-        <img src="${item.cover}" alt="${item.title}" class="search-thumb">
-        <div class="search-info">
-          <strong>${item.title}</strong><br>
-          <small>${item.language} | ${item.category}</small>
+        <div style="display: flex; align-items: center;">
+          <img src="${item.cover}" alt="${item.title}" style="width: 50px; height: 50px; border-radius: 4px; object-fit: cover; margin-right: 10px;">
+          <div>
+            <div style="font-weight: bold; font-size: 15px;">${item.title}</div>
+            <div style="font-size: 12px; color: gray;">${item.language} | ${item.category}</div>
+          </div>
         </div>
       `;
 
@@ -49,9 +52,10 @@ searchInput.addEventListener("input", () => {
   searchResults.style.display = "block";
 });
 
-// Hide on outside click
+// Hide search results on outside click
 document.addEventListener("click", function (event) {
   if (!document.querySelector(".search-container").contains(event.target)) {
     searchResults.style.display = "none";
   }
 });
+</script>
